@@ -1,0 +1,595 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Sudoku.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Sudoku.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 190, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Sudoku"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "Sudoku, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,133,52,50,14,WS_GROUP
+    CONTROL         "<a>http://software.nju.edu.cn</a>",IDC_SYSLINK1,"SysLink",WS_TABSTOP,42,38,107,11
+END
+
+IDD_SUDOKU_DIALOG DIALOGEX 0, 0, 418, 348
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Sudoku"
+MENU IDR_MENU_MAIN
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | WS_GROUP,330,85,22,20
+    CONTROL         "2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,355,85,22,20
+    CONTROL         "3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,380,85,22,20
+    CONTROL         "4",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,330,108,22,20
+    CONTROL         "5",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,355,108,22,20
+    CONTROL         "6",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,380,108,22,20
+    CONTROL         "7",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,330,131,22,20
+    CONTROL         "8",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,355,131,22,20
+    CONTROL         "9",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,380,131,22,20
+    CONTROL         "Custom2",IDC_CUSTOM1,"MFCRecViewerCtrl",WS_TABSTOP,20,37,30,26
+    CONTROL         "Custom2",IDC_CUSTOM2,"MFCRecViewerCtrl",WS_TABSTOP,53,37,30,26
+    CONTROL         "Custom2",IDC_CUSTOM3,"MFCRecViewerCtrl",WS_TABSTOP,85,36,30,26
+    CONTROL         "Custom2",IDC_CUSTOM4,"MFCRecViewerCtrl",WS_TABSTOP,118,36,30,26
+    CONTROL         "Custom2",IDC_CUSTOM5,"MFCRecViewerCtrl",WS_TABSTOP,151,37,30,26
+    CONTROL         "Custom2",IDC_CUSTOM6,"MFCRecViewerCtrl",WS_TABSTOP,184,37,30,26
+    CONTROL         "Custom2",IDC_CUSTOM7,"MFCRecViewerCtrl",WS_TABSTOP,215,36,30,26
+    CONTROL         "Custom2",IDC_CUSTOM8,"MFCRecViewerCtrl",WS_TABSTOP,247,36,30,26
+    CONTROL         "Custom2",IDC_CUSTOM9,"MFCRecViewerCtrl",WS_TABSTOP,280,37,30,26
+    CONTROL         "Custom2",IDC_CUSTOM10,"MFCRecViewerCtrl",WS_TABSTOP,17,66,30,26
+    CONTROL         "Custom2",IDC_CUSTOM11,"MFCRecViewerCtrl",WS_TABSTOP,51,66,30,26
+    CONTROL         "Custom2",IDC_CUSTOM12,"MFCRecViewerCtrl",WS_TABSTOP,85,66,30,26
+    CONTROL         "Custom2",IDC_CUSTOM13,"MFCRecViewerCtrl",WS_TABSTOP,117,66,30,26
+    CONTROL         "Custom2",IDC_CUSTOM14,"MFCRecViewerCtrl",WS_TABSTOP,151,65,30,26
+    CONTROL         "Custom2",IDC_CUSTOM15,"MFCRecViewerCtrl",WS_TABSTOP,184,66,30,26
+    CONTROL         "Custom2",IDC_CUSTOM16,"MFCRecViewerCtrl",WS_TABSTOP,217,65,30,26
+    CONTROL         "Custom2",IDC_CUSTOM17,"MFCRecViewerCtrl",WS_TABSTOP,249,64,30,26
+    CONTROL         "Custom2",IDC_CUSTOM18,"MFCRecViewerCtrl",WS_TABSTOP,281,64,30,26
+    CONTROL         "Custom2",IDC_CUSTOM19,"MFCRecViewerCtrl",WS_TABSTOP,19,95,30,26
+    CONTROL         "Custom2",IDC_CUSTOM20,"MFCRecViewerCtrl",WS_TABSTOP,51,95,30,26
+    CONTROL         "Custom2",IDC_CUSTOM21,"MFCRecViewerCtrl",WS_TABSTOP,84,94,30,26
+    CONTROL         "Custom2",IDC_CUSTOM22,"MFCRecViewerCtrl",WS_TABSTOP,116,93,30,26
+    CONTROL         "Custom2",IDC_CUSTOM23,"MFCRecViewerCtrl",WS_TABSTOP,149,95,30,26
+    CONTROL         "Custom2",IDC_CUSTOM24,"MFCRecViewerCtrl",WS_TABSTOP,182,94,30,26
+    CONTROL         "Custom2",IDC_CUSTOM25,"MFCRecViewerCtrl",WS_TABSTOP,214,95,30,26
+    CONTROL         "Custom2",IDC_CUSTOM26,"MFCRecViewerCtrl",WS_TABSTOP,247,94,30,26
+    CONTROL         "Custom2",IDC_CUSTOM27,"MFCRecViewerCtrl",WS_TABSTOP,281,94,30,26
+    CONTROL         "Custom2",IDC_CUSTOM28,"MFCRecViewerCtrl",WS_TABSTOP,18,125,30,26
+    CONTROL         "Custom2",IDC_CUSTOM29,"MFCRecViewerCtrl",WS_TABSTOP,49,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM30,"MFCRecViewerCtrl",WS_TABSTOP,81,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM31,"MFCRecViewerCtrl",WS_TABSTOP,114,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM32,"MFCRecViewerCtrl",WS_TABSTOP,146,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM33,"MFCRecViewerCtrl",WS_TABSTOP,179,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM34,"MFCRecViewerCtrl",WS_TABSTOP,212,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM35,"MFCRecViewerCtrl",WS_TABSTOP,245,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM36,"MFCRecViewerCtrl",WS_TABSTOP,279,124,30,26
+    CONTROL         "Custom2",IDC_CUSTOM37,"MFCRecViewerCtrl",WS_TABSTOP,15,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM38,"MFCRecViewerCtrl",WS_TABSTOP,49,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM39,"MFCRecViewerCtrl",WS_TABSTOP,81,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM40,"MFCRecViewerCtrl",WS_TABSTOP,113,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM41,"MFCRecViewerCtrl",WS_TABSTOP,145,153,30,26
+    CONTROL         "Custom2",IDC_CUSTOM42,"MFCRecViewerCtrl",WS_TABSTOP,179,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM43,"MFCRecViewerCtrl",WS_TABSTOP,211,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM44,"MFCRecViewerCtrl",WS_TABSTOP,244,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM45,"MFCRecViewerCtrl",WS_TABSTOP,277,154,30,26
+    CONTROL         "Custom2",IDC_CUSTOM46,"MFCRecViewerCtrl",WS_TABSTOP,17,183,30,26
+    CONTROL         "Custom2",IDC_CUSTOM47,"MFCRecViewerCtrl",WS_TABSTOP,51,183,30,26
+    CONTROL         "Custom2",IDC_CUSTOM48,"MFCRecViewerCtrl",WS_TABSTOP,83,182,30,26
+    CONTROL         "Custom2",IDC_CUSTOM49,"MFCRecViewerCtrl",WS_TABSTOP,114,182,30,26
+    CONTROL         "Custom2",IDC_CUSTOM50,"MFCRecViewerCtrl",WS_TABSTOP,145,182,30,26
+    CONTROL         "Custom2",IDC_CUSTOM51,"MFCRecViewerCtrl",WS_TABSTOP,179,184,30,26
+    CONTROL         "Custom2",IDC_CUSTOM52,"MFCRecViewerCtrl",WS_TABSTOP,211,183,30,26
+    CONTROL         "Custom2",IDC_CUSTOM53,"MFCRecViewerCtrl",WS_TABSTOP,243,183,30,26
+    CONTROL         "Custom2",IDC_CUSTOM54,"MFCRecViewerCtrl",WS_TABSTOP,277,183,30,26
+    CONTROL         "Custom2",IDC_CUSTOM55,"MFCRecViewerCtrl",WS_TABSTOP,18,213,30,26
+    CONTROL         "Custom2",IDC_CUSTOM56,"MFCRecViewerCtrl",WS_TABSTOP,51,213,30,26
+    CONTROL         "Custom2",IDC_CUSTOM57,"MFCRecViewerCtrl",WS_TABSTOP,84,212,30,26
+    CONTROL         "Custom2",IDC_CUSTOM58,"MFCRecViewerCtrl",WS_TABSTOP,115,212,30,26
+    CONTROL         "Custom2",IDC_CUSTOM59,"MFCRecViewerCtrl",WS_TABSTOP,146,213,30,26
+    CONTROL         "Custom2",IDC_CUSTOM60,"MFCRecViewerCtrl",WS_TABSTOP,178,212,30,26
+    CONTROL         "Custom2",IDC_CUSTOM61,"MFCRecViewerCtrl",WS_TABSTOP,213,213,30,26
+    CONTROL         "Custom2",IDC_CUSTOM62,"MFCRecViewerCtrl",WS_TABSTOP,245,214,30,26
+    CONTROL         "Custom2",IDC_CUSTOM63,"MFCRecViewerCtrl",WS_TABSTOP,277,213,30,26
+    CONTROL         "Custom2",IDC_CUSTOM64,"MFCRecViewerCtrl",WS_TABSTOP,15,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM65,"MFCRecViewerCtrl",WS_TABSTOP,49,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM66,"MFCRecViewerCtrl",WS_TABSTOP,83,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM67,"MFCRecViewerCtrl",WS_TABSTOP,114,241,30,26
+    CONTROL         "Custom2",IDC_CUSTOM68,"MFCRecViewerCtrl",WS_TABSTOP,145,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM69,"MFCRecViewerCtrl",WS_TABSTOP,177,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM70,"MFCRecViewerCtrl",WS_TABSTOP,211,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM71,"MFCRecViewerCtrl",WS_TABSTOP,243,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM72,"MFCRecViewerCtrl",WS_TABSTOP,278,242,30,26
+    CONTROL         "Custom2",IDC_CUSTOM73,"MFCRecViewerCtrl",WS_TABSTOP,17,271,30,26
+    CONTROL         "Custom2",IDC_CUSTOM74,"MFCRecViewerCtrl",WS_TABSTOP,51,271,30,26
+    CONTROL         "Custom2",IDC_CUSTOM75,"MFCRecViewerCtrl",WS_TABSTOP,83,271,30,26
+    CONTROL         "Custom2",IDC_CUSTOM76,"MFCRecViewerCtrl",WS_TABSTOP,115,270,30,26
+    CONTROL         "Custom2",IDC_CUSTOM77,"MFCRecViewerCtrl",WS_TABSTOP,147,270,30,26
+    CONTROL         "Custom2",IDC_CUSTOM78,"MFCRecViewerCtrl",WS_TABSTOP,178,270,30,26
+    CONTROL         "Custom2",IDC_CUSTOM79,"MFCRecViewerCtrl",WS_TABSTOP,212,271,30,26
+    CONTROL         "Custom2",IDC_CUSTOM80,"MFCRecViewerCtrl",WS_TABSTOP,244,271,30,26
+    CONTROL         "Custom2",IDC_CUSTOM81,"MFCRecViewerCtrl",WS_TABSTOP,277,270,30,26
+    GROUPBOX        "Control model",IDC_STATIC,321,33,90,125
+    CONTROL         "Pen and paper",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON | WS_GROUP,329,49,63,10
+    CONTROL         "Candidate Number",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,329,65,75,10
+    CONTROL         "Custom82",IDC_CUSTOM82,"MFCNumStatusCtrl",WS_TABSTOP,322,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM83,"MFCNumStatusCtrl",WS_TABSTOP,332,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM84,"MFCNumStatusCtrl",WS_TABSTOP,342,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM85,"MFCNumStatusCtrl",WS_TABSTOP,352,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM86,"MFCNumStatusCtrl",WS_TABSTOP,362,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM87,"MFCNumStatusCtrl",WS_TABSTOP,372,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM88,"MFCNumStatusCtrl",WS_TABSTOP,382,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM89,"MFCNumStatusCtrl",WS_TABSTOP,392,258,9,53
+    CONTROL         "Custom82",IDC_CUSTOM90,"MFCNumStatusCtrl",WS_TABSTOP,402,258,9,53
+    CONTROL         "Custom91",IDC_CUSTOM91,"MFCTimeViererCtrl",WS_TABSTOP,7,316,54,14
+    DEFPUSHBUTTON   "Button1",IDC_BUTTON1,341,181,50,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_KEY DIALOGEX 0, 0, 355, 273
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Key"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,298,22,50,14
+END
+
+IDD_DIALOG_TIPS DIALOGEX 0, 0, 418, 53
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tips"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",IDOK,361,7,50,14
+    PUSHBUTTON      "Close",IDCANCEL,361,32,50,14
+    EDITTEXT        IDC_EDIT1,7,7,335,39,ES_CENTER | ES_READONLY | ES_WANTRETURN
+END
+
+IDD_DIALOG_CREATE DIALOGEX 0, 0, 382, 297
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Game"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Check",IDC_BUTTON_CHECK,325,76,50,14
+    PUSHBUTTON      "Begin",IDC_BUTTON_BEGIN,325,99,50,14
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,325,122,50,14
+    PUSHBUTTON      "Load Current",IDC_BUTTON_LOADCURRENT,325,7,50,14
+    PUSHBUTTON      "Import",IDC_BUTTON_IMPORT,325,30,50,14
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEAR,325,53,50,14
+    CONTROL         "Custom1",IDC_CUSTOM1,"MFCRecViewerCtrl",WS_TABSTOP,7,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM2,"MFCRecViewerCtrl",WS_TABSTOP,38,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM3,"MFCRecViewerCtrl",WS_TABSTOP,69,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM4,"MFCRecViewerCtrl",WS_TABSTOP,100,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM5,"MFCRecViewerCtrl",WS_TABSTOP,131,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM6,"MFCRecViewerCtrl",WS_TABSTOP,163,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM7,"MFCRecViewerCtrl",WS_TABSTOP,195,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM8,"MFCRecViewerCtrl",WS_TABSTOP,226,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM9,"MFCRecViewerCtrl",WS_TABSTOP,258,7,29,25
+    CONTROL         "Custom1",IDC_CUSTOM10,"MFCRecViewerCtrl",WS_TABSTOP,7,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM11,"MFCRecViewerCtrl",WS_TABSTOP,38,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM12,"MFCRecViewerCtrl",WS_TABSTOP,69,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM13,"MFCRecViewerCtrl",WS_TABSTOP,100,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM14,"MFCRecViewerCtrl",WS_TABSTOP,131,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM15,"MFCRecViewerCtrl",WS_TABSTOP,163,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM16,"MFCRecViewerCtrl",WS_TABSTOP,195,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM17,"MFCRecViewerCtrl",WS_TABSTOP,226,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM18,"MFCRecViewerCtrl",WS_TABSTOP,258,34,29,25
+    CONTROL         "Custom1",IDC_CUSTOM19,"MFCRecViewerCtrl",WS_TABSTOP,7,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM20,"MFCRecViewerCtrl",WS_TABSTOP,38,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM21,"MFCRecViewerCtrl",WS_TABSTOP,69,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM22,"MFCRecViewerCtrl",WS_TABSTOP,100,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM23,"MFCRecViewerCtrl",WS_TABSTOP,131,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM24,"MFCRecViewerCtrl",WS_TABSTOP,163,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM25,"MFCRecViewerCtrl",WS_TABSTOP,195,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM26,"MFCRecViewerCtrl",WS_TABSTOP,226,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM27,"MFCRecViewerCtrl",WS_TABSTOP,258,60,29,25
+    CONTROL         "Custom1",IDC_CUSTOM28,"MFCRecViewerCtrl",WS_TABSTOP,7,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM29,"MFCRecViewerCtrl",WS_TABSTOP,38,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM30,"MFCRecViewerCtrl",WS_TABSTOP,69,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM31,"MFCRecViewerCtrl",WS_TABSTOP,100,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM32,"MFCRecViewerCtrl",WS_TABSTOP,131,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM33,"MFCRecViewerCtrl",WS_TABSTOP,163,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM34,"MFCRecViewerCtrl",WS_TABSTOP,195,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM35,"MFCRecViewerCtrl",WS_TABSTOP,226,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM36,"MFCRecViewerCtrl",WS_TABSTOP,258,87,29,25
+    CONTROL         "Custom1",IDC_CUSTOM37,"MFCRecViewerCtrl",WS_TABSTOP,7,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM38,"MFCRecViewerCtrl",WS_TABSTOP,38,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM39,"MFCRecViewerCtrl",WS_TABSTOP,69,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM40,"MFCRecViewerCtrl",WS_TABSTOP,100,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM41,"MFCRecViewerCtrl",WS_TABSTOP,131,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM42,"MFCRecViewerCtrl",WS_TABSTOP,163,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM43,"MFCRecViewerCtrl",WS_TABSTOP,195,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM44,"MFCRecViewerCtrl",WS_TABSTOP,226,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM45,"MFCRecViewerCtrl",WS_TABSTOP,258,114,29,25
+    CONTROL         "Custom1",IDC_CUSTOM46,"MFCRecViewerCtrl",WS_TABSTOP,7,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM47,"MFCRecViewerCtrl",WS_TABSTOP,38,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM48,"MFCRecViewerCtrl",WS_TABSTOP,69,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM49,"MFCRecViewerCtrl",WS_TABSTOP,100,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM50,"MFCRecViewerCtrl",WS_TABSTOP,131,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM51,"MFCRecViewerCtrl",WS_TABSTOP,163,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM52,"MFCRecViewerCtrl",WS_TABSTOP,195,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM53,"MFCRecViewerCtrl",WS_TABSTOP,226,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM54,"MFCRecViewerCtrl",WS_TABSTOP,258,140,29,25
+    CONTROL         "Custom1",IDC_CUSTOM55,"MFCRecViewerCtrl",WS_TABSTOP,7,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM56,"MFCRecViewerCtrl",WS_TABSTOP,38,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM57,"MFCRecViewerCtrl",WS_TABSTOP,69,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM58,"MFCRecViewerCtrl",WS_TABSTOP,100,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM59,"MFCRecViewerCtrl",WS_TABSTOP,131,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM60,"MFCRecViewerCtrl",WS_TABSTOP,163,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM61,"MFCRecViewerCtrl",WS_TABSTOP,195,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM62,"MFCRecViewerCtrl",WS_TABSTOP,226,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM63,"MFCRecViewerCtrl",WS_TABSTOP,258,168,29,25
+    CONTROL         "Custom1",IDC_CUSTOM64,"MFCRecViewerCtrl",WS_TABSTOP,7,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM65,"MFCRecViewerCtrl",WS_TABSTOP,38,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM66,"MFCRecViewerCtrl",WS_TABSTOP,69,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM67,"MFCRecViewerCtrl",WS_TABSTOP,100,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM68,"MFCRecViewerCtrl",WS_TABSTOP,131,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM69,"MFCRecViewerCtrl",WS_TABSTOP,163,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM70,"MFCRecViewerCtrl",WS_TABSTOP,195,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM71,"MFCRecViewerCtrl",WS_TABSTOP,226,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM72,"MFCRecViewerCtrl",WS_TABSTOP,258,195,29,25
+    CONTROL         "Custom1",IDC_CUSTOM73,"MFCRecViewerCtrl",WS_TABSTOP,7,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM74,"MFCRecViewerCtrl",WS_TABSTOP,38,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM75,"MFCRecViewerCtrl",WS_TABSTOP,69,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM76,"MFCRecViewerCtrl",WS_TABSTOP,100,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM77,"MFCRecViewerCtrl",WS_TABSTOP,131,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM78,"MFCRecViewerCtrl",WS_TABSTOP,163,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM79,"MFCRecViewerCtrl",WS_TABSTOP,195,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM80,"MFCRecViewerCtrl",WS_TABSTOP,226,222,29,25
+    CONTROL         "Custom1",IDC_CUSTOM81,"MFCRecViewerCtrl",WS_TABSTOP,258,222,29,25
+END
+
+IDD_DIALOG_MULKEYS DIALOGEX 0, 0, 307, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keys"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,250,162,50,14
+    EDITTEXT        IDC_EDIT_KEY,7,7,293,146,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Sudoku.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Sudoku.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_SUDOKU_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 341
+    END
+
+    IDD_DIALOG_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_DIALOG_TIPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_DIALOG_CREATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_DIALOG_MULKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "&Game"
+    BEGIN
+        MENUITEM "&Open\tCtrl+O",               ID_GAME_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_GAME_SAVE
+        MENUITEM "Save As Pictures",            ID_GAME_SAVEASPICTRUES
+        MENUITEM "&Print",                      ID_GAME_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Create Game",                 ID_GAME_CREATEGAME
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_GAME_EXIT
+    END
+    POPUP "&New"
+    BEGIN
+        MENUITEM "&Starter",                    ID_NEWGAME_STARTER
+        MENUITEM "&Beginner",                   ID_NEWGAME_BEGINNER
+        MENUITEM "&Intermediate",               ID_NEWGAME_INTERMEDIATE
+        MENUITEM "&Advanced",                   ID_NEWGAME_ADVANCED
+        MENUITEM "Super &Hard",                 ID_NEWGAME_SUPERHARD
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "&Check",                      ID_EDIT_CHECK
+        MENUITEM "&Tips",                       ID_EDIT_TIPS
+        MENUITEM SEPARATOR
+        MENUITEM "Undo All",                    ID_EDIT_UNDOALL
+        MENUITEM "Redo All",                    ID_EDIT_REDOALL
+        MENUITEM SEPARATOR
+        MENUITEM "See &Answer",                 ID_EDIT_SEEANSWER
+        MENUITEM "&Play Again",                 ID_EDIT_PLAYAGAIN
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Sudoku...",            ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_TABLE        BITMAP                  "res\\Table.bmp"
+IDR_TOOLBAR2            BITMAP                  "res\\toolbar2.bmp"
+IDB_BITMAP_KEY          BITMAP                  "res\\Untitled-2.bmp"
+IDB_BITMAP_LEV          BITMAP                  "res\\Choose.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_GAME_OPEN
+    BUTTON      ID_GAME_SAVE
+    BUTTON      ID_GAME_PRINT
+    BUTTON      ID_GAME_CREATEGAME
+    SEPARATOR
+    BUTTON      ID_NEWGAME_STARTER
+    BUTTON      ID_NEWGAME_BEGINNER
+    BUTTON      ID_NEWGAME_INTERMEDIATE
+    BUTTON      ID_NEWGAME_ADVANCED
+    BUTTON      ID_NEWGAME_SUPERHARD
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDOALL
+    BUTTON      ID_EDIT_SEEANSWER
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_GAME_SAVEASPICTRUES
+    SEPARATOR
+    BUTTON      ID_HELP_ABOUT
+END
+
+IDR_TOOLBAR2 TOOLBAR  16, 15
+BEGIN
+    SEPARATOR
+    BUTTON      ID_EDIT_CHECK
+    BUTTON      ID_EDIT_TIPS
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDOALL
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    BUTTON      ID_EDIT_REDOALL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Sudoku..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GAME_EXIT            "asdfsadf/nasdfji"
+    ID_HELP_ABOUT           "About Sudoku..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_REDOALL         "Redo all"
+    ID_EDIT_SEEANSWER       "See answers"
+    ID_EDIT_PLAYAGAIN       "Play again"
+    ID_NEWGAME_STARTER      "New Game: Starter"
+    ID_NEWGAME_BEGINNER     "New Game: Beginner"
+    ID_NEWGAME_INTERMEDIATE "New Game: Intermediate"
+    ID_NEWGAME_ADVANCED     "New Game: Advanced"
+    ID_NEWGAME_SUPERHARD    "New Game: Super Hard"
+    ID_GAME_CREATEGAME      "Create game"
+    ID_GAME_SAVEASPICTRUES  "Save as pictures"
+    ID_EDIT_CHECK           "Check"
+    ID_EDIT_TIPS            "Tips"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_GAME_OPEN            "Open game"
+    ID_GAME_SAVE            "Save"
+    ID_GAME_PRINT           "Print"
+    ID_EDIT_UNDOALL         "Undo all"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy to the clipboard"
+    ID_EDIT_UNDO            "Undo"
+    ID_EDIT_REDO            "Redo"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Sudoku.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
